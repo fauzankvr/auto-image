@@ -19,14 +19,12 @@ function App() {
     {
       id: "template1",
       name: "Template 1",
-      image:
-        "https://github.com/fauzankvr/auto-image/blob/main/client/public/template/template2.jpg",
+      image: "../public/template/template1.jpg",
     },
     {
       id: "template2",
       name: "Template 2",
-      image:
-        "https://github.com/fauzankvr/auto-image/blob/main/client/public/template/template2.jpg",
+      image: "../public/template/template1.jpg",
     },
   ];
 
