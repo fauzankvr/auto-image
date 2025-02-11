@@ -19,12 +19,12 @@ function App() {
     {
       id: "template1",
       name: "Template 1",
-      image: ""/template/template1.jpg"",
+      image: "/template/template1.jpg",
     },
     {
       id: "template2",
       name: "Template 2",
-      image: ""/template/template1.jpg"",
+      image: "/template/template1.jpg",
     },
   ];
 
