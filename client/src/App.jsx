@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
 import "./App.css";
 
@@ -17,15 +17,15 @@ function App() {
   // Sample template data
   const templates = [
     {
-      id: "template1",
-      name: "Template 1",
-      image: "/template/template1.jpg",
+      id: "zumrahposter",
+      name: "Zumrah",
+      image: "/template/zumrah.jpg",
     },
-    {
-      id: "template2",
-      name: "Template 2",
-      image: "/template/template1.jpg",
-    },
+    // {
+    //   id: "template2",
+    //   name: "Template 2",
+    //   image: "/template/template1.jpg",
+    // },
   ];
 
   const handleTemplateSelect = (templateId) => {
@@ -83,20 +83,20 @@ const handleDownload = () => {
         // Form Page & Image Preview
         <div>
           <h2>Enter Event Details</h2>
-          <input
+          {/* <input
             placeholder="Heading"
             value={formData.heading}
             onChange={(e) =>
               setFormData({ ...formData, heading: e.target.value })
-            }
-          />
-          <input
+            } */}
+          {/* /> */}
+          {/* <input
             placeholder="Subheading"
             value={formData.subheading}
             onChange={(e) =>
               setFormData({ ...formData, subheading: e.target.value })
             }
-          />
+          /> */}
           <input
             placeholder="Date"
             value={formData.date}
@@ -109,13 +109,13 @@ const handleDownload = () => {
               setFormData({ ...formData, place: e.target.value })
             }
           />
-          <textarea
+          {/* <textarea
             placeholder="Additional Details"
             value={formData.details}
             onChange={(e) =>
               setFormData({ ...formData, details: e.target.value })
             }
-          />
+          /> */}
 
           {/* Image Preview with Text Overlay */}
           <div
@@ -141,14 +141,15 @@ const handleDownload = () => {
               className="heading"
               style={{
                 position: "absolute",
-                top: "25%",
+                top: "27%",
                 left: "0",
                 width: "100%",
                 textAlign: "center",
                 color: "black",
                 padding: "5px",
-                fontSize: "50px",
-                fontFamily: "Abril Fatface",
+                fontSize: "65px",
+                fontWeight: "700",
+                fontFamily: "Manjari",
               }}
             >
               {formData.heading}
@@ -171,7 +172,7 @@ const handleDownload = () => {
               className="date"
               style={{
                 position: "absolute",
-                bottom: "40%",
+                bottom: "42%",
                 left: "50%",
                 transform: "translateX(-50%)",
                 color: "white",
@@ -185,12 +186,13 @@ const handleDownload = () => {
               className="place"
               style={{
                 position: "absolute",
-                bottom: "25%",
+                bottom: "28%",
                 left: "50%",
                 transform: "translateX(-50%)",
                 color: "black",
                 padding: "5px",
                 fontSize: "16px",
+                fontFamily: "Manjari",
               }}
             >
               {formData.place}
